@@ -1,0 +1,204 @@
+.company-contanier{
+    background: url(../images/visual-brand.png) no-repeat center / cover;
+    background-attachment: fixed;
+}
+.deemed-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.company-contanier .visual{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company-contanier .visual .text{
+    text-align: center;
+    z-index: 2;
+}
+.company-contanier .visual .text span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.company-contanier .visual .text b{
+    display: block;
+    font-size: 70px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: -0.01px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    padding: 20px 0;
+}
+
+.company-contanier .visual .text p{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: -0.01px;
+    line-height: 1.7em;
+    position: relative;
+}
+.company-contanier .visual .text p::after{
+    content: '';
+    width: 1px;
+    height: 150px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -220px;
+    left: 50%;
+    margin-left: 0.5px;
+}
+.company-contanier .contents{
+    padding: 150px 0 ;
+    background-color: #fff;
+}
+.company-contanier .contents .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+    flex-flow: row-reverse;
+}
+.company-contanier .contents .item:nth-child(2){
+    flex-flow: row;
+}
+.company-contanier .contents .item .text span{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c27a34;
+    margin-bottom: 5px;
+}
+.company-contanier .contents .item .text b{
+    display: block;
+    font-size: 42px;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: -0.02px;
+    margin-bottom: 10px;
+}
+.company-contanier .contents .item .text p{
+    font-size: 15px;
+    line-height: 1.4em;
+    letter-spacing: -0.01px;
+}
+.company-contanier .contents .item .text p + p{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #555;
+}
+.company-contanier .contents .item .thumb{
+    width:600px;
+}
+.company-contanier .contents .item .thumb img{
+    display: block;
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 1200px) { 
+    .company-contanier .contents .item .thumb{
+        width: 500px;
+    }
+    .company-contanier .contents .item .text b{
+        font-size: 32px;
+    }
+    .company-contanier .contents .item .text p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1024px) { 
+    .company-contanier .contents{
+        padding: 80px 0;
+    }
+.company-contanier .contents .item .thumb img{
+    max-width: 90%;
+    margin: 0 auto;
+    }   
+}
+@media screen and (max-width: 768px) { 
+    .company-contanier .visual .text img{
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+    }
+    .company-contanier .visual .text b{
+        font-size: 40px;
+    }
+    .company-contanier .visual .text p {
+        font-size: 15px;
+    }
+    .company-contanier .visual .text p::after {
+        height: 110px;
+        bottom: -150px;
+    }
+    .company-contanier .contents .item{
+        display: block;
+        padding: 60px 0;
+    }
+    .company-contanier .contents .item .thumb{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .company-contanier .contents .item .thumb img{
+        max-width: 100%;
+    }
+    .company-contanier .contents .item .text br{
+        display: none;
+    }
+    .company-contanier .contents .item .text p{
+        font-size: 17px;
+    }
+    .company-contanier .contents .item .text p + p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) { 
+    .company-contanier .visual .text img{
+        width: 30vw;
+    }
+    .company-contanier .visual .text b{
+        font-size: 8.33vw;
+        padding: 4.1vw 0;
+    }
+    .company-contanier .visual .text p {
+        font-size: 3.1vw;
+    }
+    .company-contanier .visual .text p::after {
+        height: 20vw;
+        bottom: -31vw;
+    }
+    .company-contanier .contents{
+        padding: 15vw 0;
+    }
+    .company-contanier .contents .item{
+        display: block;
+        padding: 10vw 0;
+    }
+    .company-contanier .contents .item .thumb{
+        margin-bottom: 6.25vw;
+    }
+    .company-contanier .contents .item .text span{
+        font-size: 4.16vw;
+        margin-bottom: 1vw;
+    }
+    .company-contanier .contents .item .text b{
+        font-size: 6vw;
+        margin-bottom: 2vw;
+    }
+    .company-contanier .contents .item .text p{
+        font-size: 3.6vw;
+    }
+    .company-contanier .contents .item .text p + p{
+        font-size: 3vw;
+        margin-top: 2vw;
+    }
+}

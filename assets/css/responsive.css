@@ -1,0 +1,346 @@
+@media screen and (max-width: 1200px) { 
+    .inner{
+        width: 96%;
+    }
+    .visual-pagination{
+        width: 96% !important;
+    }
+    .story .tab{
+        top: 60px;
+    }
+    .story .tab li{
+        height: 60px;
+    }
+    .story .tab li button{
+        font-size: 40px;
+    }
+    .story-active button{
+        font-size: 50px !important;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) { 
+    .product .pr-list li{
+       max-width: initial;
+       width: 23.25%;
+    }
+    .product .pr-list li p{
+        font-size: 14px;
+    }
+    .story .tab{
+        top: 10px;
+    }
+    .story .contents .story-item .con-list li{
+        width: 30%;
+    }
+    .story .contents .story-item .con-list li + li{
+        margin-left: 5%;
+    }
+    .story .contents .story-item > span{
+        font-size: 32px;
+    }
+    .story .contents .story-item p{
+        font-size: 20px;
+    }
+    .story .contents .story-item .premium-list{
+        display: block;
+        width: 100%;
+    }
+    .story .contents .story-item .premium-list img{
+        width: 49%;
+        display: inline-block;
+    }
+    .story .contents .story-item .premium-list img + img{  
+        margin-left: 1%;
+    }
+
+  }
+  @media screen and (max-width: 768px) { 
+    .product{
+        padding: 80px 0;
+    }
+    .product .pr-list li{
+       display: block;
+       width: 96%;
+       margin: 0 auto;
+       margin-bottom: 10px;
+    }
+    .product .pr-list li p{
+        font-size: 17px;
+    }
+    .product .pr-list{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+    .special{
+        height: 400px;
+    }
+    .special .text span{
+        font-size: 50px;
+    }
+    .special .text p{
+        font-size: 20px;
+    }
+
+    .story{
+        padding: 80px 0 120px;
+        height: auto;
+    }
+    .story .tab{
+        top: 40px;
+    }
+    .story .contents .story-item > span{
+        font-size: 28px;
+    }
+    .story .contents .story-item p{
+        font-size: 17px;
+    }
+    .story .tab li{
+        height: 45px;
+    }
+    .story-active button{
+        font-size: 40px !important;
+    }
+    .story .tab li button{
+        font-size: 30px;
+    }
+    .story .contents .story-item .con-list span{
+        font-size: 17px;
+    }
+    .story .contents .story-item .overrun-list{
+        display: block;
+    }
+    .story .contents .story-item .overrun-list img:first-child{
+        width: 50%;
+        display: inline-block;
+    }
+    .story .contents .story-item .overrun-list img:last-child{
+        width: 42.5%;
+        margin-left: 2%;
+        display: inline-block;
+    }
+    
+    .banner .content{
+        height: 100px;
+    }
+    .banner .content .text > div span{
+        font-size: 24px;
+    }
+    .banner .content .text > div .x {
+        padding: 5px 10px 7px;
+        width: 14px;
+    }
+    .banner .content .text p{
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .banner .text .banner-char{
+        width: 130px;
+        top: -30px;
+        right: -140px;
+    }
+    .news{
+        padding: 100px 0;
+    }
+    .news .news-list .item .text p{
+        font-size: 17px;
+    }
+  }
+
+  @media screen and (max-width: 580px) { 
+    .story .contents .story-item > span{
+        font-size: 24px;
+    }
+    .story .contents .story-item p{
+        font-size: 14px;
+    }
+    .story .tab{
+        top: 50px;
+    }
+    .story .tab li {
+        height: 35px;
+    }
+    .story .tab li button {
+        font-size: 22px;
+    }
+    .story-active button {
+        font-size: 30px !important;
+    }
+    .story .contents .story-item .con-list div{
+        display: block;
+    }
+    .story .contents .story-item .con-list div img{
+        display: block;
+        margin: 10px auto 20px;
+        width: 32px;
+    }
+    .story .contents .story-item .con-list span{
+        display: block;
+        margin-left: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+    .banner .content {
+        height: 18vw;
+    }
+    .banner .content .text > div span{
+        font-size:5vw;
+    }
+    .banner .content .text > div .x {
+        padding: 0.86vw 1.72vw 1.2vw;
+        width: 2.4vw;
+    }
+    .banner .content .text p {
+        margin-top: 1.72vw;
+        font-size: 3.6vw;
+    }
+    .banner .text .banner-char {
+        width: 22.42vw;
+        top: -5.17vw;
+        right: -24.13vw;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+.visual-pagination{
+    margin-top:52vw;
+    padding-left: 2vw;
+}
+.visual-pagination .swiper-pagination-bullet{
+    width: 16vw;
+    height: 2px;
+}
+    .main-visual .text span{
+        font-size: 11vw;
+    }
+    .main-visual .text p{
+        font-size: 5.83vw;
+        margin-bottom: 6.25vw;
+    }
+    .main-visual .text a {
+        width: 29.1vw;
+        height: 7.08vw;
+        line-height: 7.08vw;
+        font-size: 3.75vw;
+        padding: 0 4.16vw;
+    }
+    .main-visual .text a:after {
+        width: 3.33vw;
+        height: 3.33vw;
+        right: 3.33vw;
+        margin-top: -1.66vw;
+    }
+    .main-visual .bg {
+        background-image: url(../images/m_main-visual-01.png);
+        background-position: -40px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main-visual .bg.bg2 {
+        background-image: url(../images/m_main-visual-03.png);
+        background-position: -80px -0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+    .product{
+        padding: 16.66vw 0;
+    }
+    .section-title p{
+        font-size: 7.19vw;
+    }
+    .section-title span {
+        font-size: 4.58vw;
+        margin-bottom: 8.33vw;
+    }
+    .product .pr-list li{
+        padding: 2.08vw;
+    }
+    .product .pr-list li span{
+        font-size: 3.3vw;
+    }
+    .product .pr-list li p{
+        font-size: 3.4vw;
+        
+    }
+    .product .pr-list li img{
+        margin-bottom: 10.41vw;
+    }
+
+    .special {
+        height: 70vw;
+    }
+    .special .text span{
+        font-size: 10.41vw;
+
+    }
+    .special .text p{
+        font-size: 4.16vw;
+        margin-bottom: 6.25vw;
+    }
+    .special .text a {
+        font-size: 2.91vw;
+        width: 25vw;
+        height: 7.5vw;
+        line-height: 7.5vw;
+  }
+
+  .story{
+    padding: 12.5vw 0 24vw;
+  }
+  .story-active button{
+      font-size: 6.25vw !important;
+  }
+  .story .tab{
+    top: 12vw;
+  }
+  .story .tab li{
+      height: 7.3vw;
+  }
+  .story .tab li button{
+      font-size: 4.58vw;
+  }
+  .story .contents .story-item > span{
+      font-size: 6.25vw;
+      margin-bottom: 2.08vw;
+  }
+  .story .contents .story-item p{
+      font-size: 3vw;
+  }
+  .story .contents .story-item .con-list,
+  .story .contents .story-item .premium-list,
+  .story .contents .story-item .overrun-list{
+      padding-top: 12.5vw;
+  }
+  .story .contents .story-item .overrun-list{
+      font-size: 8vw;
+  }
+  .story .contents .story-item .premium-list img + img,
+  .story .contents .story-item .overrun-list img:last-child{
+      margin-left: 0;
+  }
+
+  .news{
+      padding: 14.5vw 0;
+  }
+  .news .news-list .item .text p{
+      font-size: 4.3vw;
+      margin-bottom: 4vw;
+  }
+  .news .news-list .item .text > div span{
+      font-size: 3.6vw;
+  }
+.news .news-list .item .text > div a {
+    font-size: 3vw;
+    width: 25vw;
+    height: 7.5vw;
+    line-height: 7.5vw;
+}
+}
+@media screen and (max-width: 380px) {
+    .story .tab{
+       top: 15vw;
+    }
+}

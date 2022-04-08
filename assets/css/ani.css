@@ -1,0 +1,8 @@
+@keyframes visualMove {
+    from {transform: scale(1.1);}
+    to {transform: scale(1.0);}
+  }
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="robots" content="index,follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Natuur</title>
+    <meta name="description" content="Natuur" />
+    <!-- og -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Natuur" />
+    <meta property="og:description" content="Natuur" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/ani.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />  
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="aside"></div>
+    <div class="deemed"></div>
+    <div id="wrap">
+        <!--visual-->
+        <div class="swiper main-visual-container">
+            <div class="main-visual swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text">
+                        <div class="inner">
+                            <span>BEGIN VEGAN</span>
+                            <p>
+                                환경을 위한 달콤한 한걸음
+                            </p>
+                            <a href="/">more</a>
+                        </div>
+                    </div>
+                    <div class="bg"></div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text text2">
+                        <div class="inner">
+                            <span>FRESH & PURE</span>
+                            <p>
+                                깊고 풍부한 자연의 맛
+                            </p>
+                            <a href="/">more</a>
+                        </div>
+                    </div>
+                    <div class="bg bg2"></div>
+                </div>
+            </div>
+            <div class="visual-pagination"></div>
+        </div>
+        <!-- //visual -->
+
+        <!--product-->
+        <div class="product">
+            <div class="inner">
+                <div class="section-title">
+                    <p>Product</p>
+                    <span>다양한 나뚜루의 상품을 만나보세요</span>
+                </div>
+                <ul class="pr-list">
+                    <li>
+                        <a href="/">
+                            <span>Ice Craem</span>
+                            <img src="/assets/images/pr-4.png" alt="">
+                            <p>자연을 담은 나뚜루 아이스크림</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <span>Ice Cake</span>
+                            <img src="/assets/images/pr-2.png" alt="">
+                            <p>특별한 날, 조금 더 특별하게</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <span>Dessert</span>
+                            <img src="/assets/images/pr-3.png" alt="">
+                            <p>파티쉐가 추천하는 디저트</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <span>Beverage</span>
+                            <img src="/assets/images/pr-1.png" alt="">
+                            <p>전문 바리스타가 만드는 음료</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--//product-->
+
+        <!--special-->
+        <div class="special">
+            <div class="text">
+                <div class="inner">
+                    <span>speacial bar</span>
+                    <p>쉐프가 직접 만드는 <b>수제 아이스크림바</b></p>
+                    <a href="/">more view</a>
+                </div>
+            </div>
+            <div class="bg"></div>
+        </div>
+        <!--//special-->
+
+        <!--story-->
+        <div class="story">
+            <div class="inner">
+              
+                <ul class="tab">
+                    <li class="story-active tab-link" onclick="handleTab(event,'content1')"><button>Fresh&Pure</button></li>
+                    <li class="tab-link" onclick="handleTab(event,'content2')"><button>Premium</button></li>
+                    <li class="tab-link" onclick="handleTab(event,'content3')"><button>Over run</button></li>
+                </ul>
+                <div class="contents">
+                    <div class="story-item story-active" id="content1">
+                        <span>신선한 재료의 맛</span>
+                        <p>
+                            나뚜루는 세계 각지에서 엄선한 고급원료와 <br>
+                            첨단기술을 하나로 결합하여 만든 아이스크림입니다.
+                        </p>
+                        <ul class="con-list">
+                            <li>
+                                <img src="/assets/images/con1.png" alt="">
+                                <div><img src="/assets/images/flag1.png" alt=""><span>벨기에 - 초콜릿</span></div>
+                            </li>
+                            <li>
+                                <img src="/assets/images/con2.png" alt="">
+                                <div><img src="/assets/images/flag2.png" alt=""><span>마다가스카르 - 바닐라</span></div>
+                            </li>
+                            <li>
+                                <img src="/assets/images/con3.png" alt="">
+                                <div><img src="/assets/images/flag3.png" alt=""><span>제주도 - 녹차</span></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="story-item" id="content2">
+                        <span>천연원료로 만든 자연의 맛</span>
+                        <p>
+                            유지방 14%이상의 아이스크림으로<br>
+                            100% 천연색소로만 만드는 프리미엄 아이스크림 입니다.
+                        </p>
+                        <div class="premium-list">
+                            <img src="/assets/images/premium1.png" alt="">
+                            <img src="/assets/images/premium2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="story-item" id="content3">
+                        <span>진하고 맛있는 비법</span>
+                        <p>
+                            아이스크림 베이스가 냉각과정을 통해 반 고체 상태의<br>
+                            아이스크림이 되면서 주입된 공기의 함유량을 말하며<br>
+                            아이스크림 식감을 결정하는 역할을 합니다.
+                        </p>
+                        <div class="overrun-list">
+                            <img src="/assets/images/overrun1.jpeg" alt="">
+                            <img src="/assets/images/overrun2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//story-->
+        
+        <!--banner-->
+        <div class="banner">
+            <div class="content">
+                <div class="text">
+                    <div>
+                        <span>나뚜루</span>
+                        <img class="x" src="/assets/images/icon-x.png" alt="">
+                        <span>배달의민족</span>
+                    </div>
+                    <p>집에서도 나뚜루와 함께!</p>
+                    <div class="banner-char"><img src="/assets/images/banner-item1.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <!--//banner-->
+        <!--news-->
+        <div class="news">
+            <div class="inner">
+                <div class="section-title">
+                    <p>News</p>
+                    <span>나뚜루의 소식을 확인해보세요.</span>
+                </div>
+                <div class="swiper news-slide">
+                    <div class="news-list swiper-wrapper">
+                        <div class="item swiper-slide">
+                            <div class="thumb">
+                                <img src="/assets/images/news-01.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p>새학기 새로운친구들과 나뚜르 인증하자!</p>
+                                <div>
+                                    <span>2022.03.01</span>
+                                    <a href="/">more view</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="thumb">
+                                <img src="/assets/images/news-02.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p>화이트데이는 나뚜르와 함께</p>
+                                <div>
+                                    <span>2022.02.01</span>
+                                    <a href="/">more view</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="thumb">
+                                <img src="/assets/images/news-03.png" alt="">
+                            </div>
+                            <div class="text">
+                                <p>나뚜르 마켓컬립입점기념 혜택</p>
+                                <div>
+                                    <span>2022.01.01</span>
+                                    <a href="/">more view</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//news-->
+    </div>
+    <div id="footer"></div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/inc.js"></script>
+    <script src="/assets/js/script.js"></script>
+</body>
+</html>
