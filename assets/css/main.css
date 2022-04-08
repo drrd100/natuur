@@ -69,13 +69,13 @@
 .main-visual .bg{
     width: 100%;
     height: 100%;
-    background-image: url(../images/main-visual-01.png) ;
+    background-image: url(../images/main-visual-01.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .main-visual .bg.bg2{
-    background-image: url(../images/main-visual-03.png);
+    background-image: url(../images/main-visual-03.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,6 +86,7 @@
     position: relative;
 }
 .visual-pagination{
+    max-width: 1200px;
     display: flex;
     align-items: center;
     width: 1200px !important;
@@ -94,7 +95,7 @@
     right: 0;
     top: 0;
     bottom: 0 !important;
-    margin-top: 250px;
+    margin: 250px auto 0;
     padding-left: 20px;
     z-index: 2;
     transition: all 0.6s ease;
@@ -424,7 +425,7 @@
 .special .bg{
     width: 100%;
     height: 100%;
-    background: url(../images/special-bg.png) no-repeat center / cover;
+    background: url(../images/special-bg.jpg) no-repeat center / cover;
 }
 .special .text{
     position: absolute;

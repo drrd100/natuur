@@ -233,13 +233,11 @@
     }
     .main-visual .bg {
         background-image: url(../images/m_main-visual-01.png);
-        background-position: -40px 0px;
         background-repeat: no-repeat;
         background-size: cover;
     }
     .main-visual .bg.bg2 {
         background-image: url(../images/m_main-visual-03.png);
-        background-position: -80px -0px;
         background-repeat: no-repeat;
         background-size: cover;
     }
