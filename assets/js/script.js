@@ -66,26 +66,26 @@ let newsSwiper = new Swiper(".news-slide", {
     deemed.style.display = "none";
   }
   
-  asideBtn.addEventListener('click' , asideOpen)
-  closeBtn.addEventListener('click' , asideClose)
+  asideBtn.addEventListener('click' , asideOpen);
+  closeBtn.addEventListener('click' , asideClose);
 
 
-  const asideMenu = () => {
-    let listTitle = document.getElementsByClassName('list-title');
-    let i;
-  
-    for (i = 0; i < listTitle.length; i++) {
-      listTitle[i].addEventListener("click", (e) => {
-        e.target.classList.toggle('aside-checked');
-        let listItem = e.target.nextElementSibling;
-        if (listItem.style.maxHeight) {
-          listItem.style.maxHeight = null;
-        } else {
-          listItem.style.maxHeight = listItem.scrollHeight + "px";
-        }
-      });
-    }
+  function asideMenu() {
+  let listTitle = document.getElementsByClassName('list-title');
+  let i;
+
+  for (i = 0; i < listTitle.length; i++) {
+    listTitle[i].addEventListener("click", (e) => {
+      e.target.classList.toggle('aside-checked');
+      let listItem = e.target.nextElementSibling;
+      if (listItem.style.maxHeight) {
+        listItem.style.maxHeight = null;
+      } else {
+        listItem.style.maxHeight = listItem.scrollHeight + "px";
+      }
+    });
   }
+}
   asideMenu()
 
   const handleTab = (e, contentIdx) => {

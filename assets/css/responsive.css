@@ -72,6 +72,10 @@
        display: grid;
        grid-template-columns: 1fr 1fr;
     }
+    .product .pr-list li:hover{
+        transform: none;
+    }
+
     .special{
         height: 400px;
     }
