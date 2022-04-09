@@ -149,6 +149,12 @@
   }
 
   @media screen and (max-width: 580px) { 
+    .main-visual .text span{
+        font-size: 60px;
+    }
+    .main-visual .text p{
+        font-size: 30px;
+    }
     .story .contents .story-item > span{
         font-size: 24px;
     }
@@ -204,7 +210,6 @@
 
   @media screen and (max-width: 480px) {
 .visual-pagination{
-    margin-top:52vw;
     padding-left: 2vw;
 }
 .visual-pagination .swiper-pagination-bullet{
