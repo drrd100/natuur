@@ -243,7 +243,7 @@ body { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
 
 /*** aside ***/
 #aside{
-    width: 70%;
+    width: 80%;
     position: fixed;
     right:0;
     top: 0;
@@ -262,7 +262,7 @@ body { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
     border-bottom: 1px solid #ccc;
 }
 #aside .aside-top .aside-logo a{
-    width: 120px;
+    width: 80px;
     display: block;
 }
 #aside .aside-top .aside-logo a img{
@@ -273,8 +273,8 @@ body { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
 #aside .menu-list .item .list-title{
     width: 100%;
     display: block;
-    font-size: 26px;
-    padding: 20px 0;
+    font-size: 18px;
+    padding: 12px 0;
     border-bottom: 1px solid #ccc;
     font-weight: 400;
     cursor: pointer;
@@ -311,16 +311,16 @@ body { font-family: 'Spoqa Han Sans Neo', 'sans-serif'; }
     display: block;
     padding: 8px 0;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
     padding-left: 10px;
     letter-spacing: 0.01px;
     color: #666;
 }
 #aside .menu-list .item .sub-menu a:first-child{
-    padding-top: 20px;
+    padding-top: 12px;
 }
 #aside .menu-list .item .sub-menu a:last-child{
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 }
 .aside-active{
 transform: translateX(0) !important;  

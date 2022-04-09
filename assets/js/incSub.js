@@ -7,7 +7,7 @@ fetch("../inc/sub_header.html")
         document.querySelector("#header").innerHTML = data;
 });
 
-fetch("../inc/aside.html")
+fetch("../inc/sub_aside.html")
         .then(response => {
         return response.text()
         })

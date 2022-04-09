@@ -172,14 +172,14 @@
     }
     .story .contents .story-item .con-list div img{
         display: block;
-        margin: 10px auto 20px;
-        width: 32px;
+        margin: 1.72vw auto 3.4vw;
+        width: 5.5vw;
     }
     .story .contents .story-item .con-list span{
         display: block;
         margin-left: 0;
         text-align: center;
-        font-size: 14px;
+        font-size: 2.41vw;
     }
     .banner .content {
         height: 18vw;
@@ -260,7 +260,7 @@
         font-size: 3.3vw;
     }
     .product .pr-list li p{
-        font-size: 3.4vw;
+        font-size: 3.3vw;
         
     }
     .product .pr-list li img{

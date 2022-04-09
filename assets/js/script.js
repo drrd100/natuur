@@ -1,4 +1,3 @@
-window.onload = function(){
   const headerScroll = () =>{
     const scrollTop = document.documentElement.scrollTop;
     const header = document.getElementById('header')
@@ -50,24 +49,26 @@ let newsSwiper = new Swiper(".news-slide", {
       }
   });
 
-    const aside = document.getElementById('aside');
-    const asideBtn = document.getElementsByClassName('aside-btn');
-    const closeBtn = document.getElementsByClassName('aside-closeBtn')
-    const deemed = document.getElementsByClassName('deemed');
-  
-  asideBtn[0].addEventListener('click', () => {
-    console.log("click");
+  const aside = document.querySelector('#aside');
+  const asideBtn = document.querySelector('.aside-btn');
+  const closeBtn = document.querySelector('.aside-closeBtn')
+  const deemed = document.querySelector('.deemed');
+
+  const asideOpen = () => {
     aside.classList.add('aside-active');
     document.body.classList.add('scroll-stop');
-    deemed[0].style.display = "block";
-  });
+    deemed.style.display = "block";
+  }
 
-  closeBtn[0].addEventListener('click', () => {
-    console.log("click");
+  const asideClose = () => {
     aside.classList.remove('aside-active');
     document.body.classList.remove('scroll-stop')
-    deemed[0].style.display = "none";
-  });
+    deemed.style.display = "none";
+  }
+  
+  asideBtn.addEventListener('click' , asideOpen)
+  closeBtn.addEventListener('click' , asideClose)
+
 
   const asideMenu = () => {
     let listTitle = document.getElementsByClassName('list-title');
@@ -105,4 +106,3 @@ let newsSwiper = new Swiper(".news-slide", {
   }
 
 
-}
