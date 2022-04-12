@@ -25,9 +25,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/common.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />  
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- SCRIPT -->
     <script src="./assets/js/inc.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
 </head>
 <body>
@@ -71,32 +73,32 @@
         <div class="product">
             <div class="inner">
                 <div class="section-title">
-                    <p>Product</p>
-                    <span>다양한 나뚜루의 상품을 만나보세요</span>
+                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Product</p>
+                    <span data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">다양한 나뚜루의 상품을 만나보세요</span>
                 </div>
                 <ul class="pr-list">
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="900" data-aos-delay="300">
                         <a href="/natuur/brand/company.html">
                             <span>Ice Craem</span>
                             <img src="./assets/images/pr-4.png" alt="">
                             <p>자연을 담은 나뚜루 아이스크림</p>
                         </a>
                     </li>
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="1200" data-aos-delay="600">
                         <a href="/natuur/brand/company.html">
                             <span>Ice Cake</span>
                             <img src="./assets/images/pr-2.png" alt="">
                             <p>특별한 날, 조금 더 특별하게</p>
                         </a>
                     </li>
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="1500" data-aos-delay="900">
                         <a href="/natuur/brand/company.html">
                             <span>Dessert</span>
                             <img src="./assets/images/pr-3.png" alt="">
                             <p>파티쉐가 추천하는 디저트</p>
                         </a>
                     </li>
-                    <li>
+                    <li data-aos="flip-left" data-aos-duration="1800" data-aos-delay="1200">
                         <a href="/natuur/brand/company.html">
                             <span>Beverage</span>
                             <img src="./assets/images/pr-1.png" alt="">
@@ -112,9 +114,9 @@
         <div class="special">
             <div class="text">
                 <div class="inner">
-                    <span>speacial bar</span>
-                    <p>쉐프가 직접 만드는 <b>수제 아이스크림바</b></p>
-                    <a href="/natuur/brand/company.html">more view</a>
+                    <span data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300" data-aos-anchor-placement="center-bottom">speacial bar</span>
+                    <p data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600" data-aos-anchor-placement="center-bottom" >쉐프가 직접 만드는 <b>수제 아이스크림바</b></p>
+                    <a data-aos="fade-up" data-aos-duration="1200" data-aos-delay="900" data-aos-anchor-placement="center-bottom" href="/natuur/brand/company.html">more view</a>
                 </div>
             </div>
             <div class="bg"></div>
@@ -122,13 +124,12 @@
         <!--//special-->
 
         <!--story-->
-        <div class="story">
+        <div class="story" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300" data-aos-anchor-placement="center-bottom">
             <div class="inner">
-              
                 <ul class="tab">
-                    <li class="story-active tab-link" onclick="handleTab(event,'content1')"><button>Fresh&Pure</button></li>
-                    <li class="tab-link" onclick="handleTab(event,'content2')"><button>Premium</button></li>
-                    <li class="tab-link" onclick="handleTab(event,'content3')"><button>Over run</button></li>
+                    <li data-aos="fade-left"  data-aos-delay="300" class="story-active tab-link" onclick="handleTab(event,'content1')"><button>Fresh&Pure</button></li>
+                    <li data-aos="fade-left"  data-aos-delay="500" class="tab-link" onclick="handleTab(event,'content2')"><button>Premium</button></li>
+                    <li data-aos="fade-left"  data-aos-delay="700" class="tab-link" onclick="handleTab(event,'content3')"><button>Over run</button></li>
                 </ul>
                 <div class="contents">
                     <div class="story-item story-active" id="content1">
@@ -184,13 +185,13 @@
         <div class="banner">
             <div class="content">
                 <div class="text">
-                    <div>
+                    <div data-aos="zoom-in" data-aos-duration="800">
                         <span>나뚜루</span>
                         <img class="x" src="./assets/images/icon-x.png" alt="">
                         <span>배달의민족</span>
                     </div>
-                    <p>집에서도 나뚜루와 함께!</p>
-                    <div class="banner-char"><img src="./assets/images/banner-item1.png" alt=""></div>
+                    <p data-aos="zoom-in" data-aos-duration="1000">집에서도 나뚜루와 함께!</p>
+                    <div class="banner-char" data-aos="fade-left" data-aos-duration="1800" data-aos-delay="500" ><img src="./assets/images/banner-item1.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -199,10 +200,10 @@
         <div class="news">
             <div class="inner">
                 <div class="section-title">
-                    <p>News</p>
-                    <span>나뚜루의 소식을 확인해보세요.</span>
+                    <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">News</p>
+                    <span data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">나뚜루의 소식을 확인해보세요.</span>
                 </div>
-                <div class="swiper news-slide">
+                <div class="swiper news-slide" data-aos="fade-up" data-aos-duration="1200" >
                     <div class="news-list swiper-wrapper">
                         <div class="item swiper-slide">
                             <div class="thumb">
@@ -250,4 +251,9 @@
 </body>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </html>
+
+
