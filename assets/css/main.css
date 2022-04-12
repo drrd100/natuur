@@ -137,6 +137,7 @@
     box-sizing: border-box;
 }
 .story .inner{
+    overflow: hidden;
     position: relative;
 }
 
@@ -321,6 +322,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
 }
 .banner .content .text{
@@ -353,6 +355,7 @@
     position: absolute;
     right: -170px;
     top: -40px;
+    overflow: hidden;
 }
 .banner .text .banner-char img{
     display: block;
