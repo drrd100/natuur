@@ -105,4 +105,5 @@ let newsSwiper = new Swiper(".news-slide", {
     e.currentTarget.classList.add("story-active");
   }
 
+  AOS.init();
 

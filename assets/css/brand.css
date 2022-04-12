@@ -21,6 +21,11 @@
     text-align: center;
     z-index: 2;
 }
+.company-contanier .visual .text img{
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+}
 .company-contanier .visual .text span{
     font-size: 30px;
     font-weight: 700;
