@@ -1,4 +1,6 @@
-  const headerScroll = () =>{
+window.onload = function(){
+
+const headerScroll = () =>{
     const scrollTop = document.documentElement.scrollTop;
     const header = document.getElementById('header')
     
@@ -107,3 +109,4 @@ let newsSwiper = new Swiper(".news-slide", {
 
   
 
+}
