@@ -1,3 +1,20 @@
+const handleTab = (e, contentIdx) => {
+  let i, tabcontent, tablink;
+  tabcontent = document.getElementsByClassName("story-item");
+  for (i = 0; i < tabcontent.length; i++) {
+  tabcontent[i].classList.remove("story-active")
+  }
+
+  tablink = document.getElementsByClassName("tab-link");
+  for (i = 0; i < tablink.length; i++) {
+      tablink[i].classList.remove("story-active")
+  }
+
+  const cur = document.getElementById(contentIdx)
+  cur.classList.add('story-active');
+  e.currentTarget.classList.add("story-active");
+}
+
 window.onload = function(){
 
 const headerScroll = () =>{
@@ -89,24 +106,5 @@ let newsSwiper = new Swiper(".news-slide", {
   }
 }
   asideMenu()
-
-  const handleTab = (e, contentIdx) => {
-    let i, tabcontent, tablink;
-    tabcontent = document.getElementsByClassName("story-item");
-    for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].classList.remove("story-active")
-    }
-  
-    tablink = document.getElementsByClassName("tab-link");
-    for (i = 0; i < tablink.length; i++) {
-        tablink[i].classList.remove("story-active")
-    }
-  
-    const cur = document.getElementById(contentIdx)
-    cur.classList.add('story-active');
-    e.currentTarget.classList.add("story-active");
-  }
-
-  
 
 }
