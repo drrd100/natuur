@@ -17,90 +17,102 @@ const handleTab = (e, contentIdx) => {
 
 window.onload = function(){
 
-const headerScroll = () =>{
-    const scrollTop = document.documentElement.scrollTop;
-    const header = document.getElementById('header')
-    
-    if(scrollTop > 100){
-        header.classList.add('scroll-down');
-    }else{
-        header.classList.remove('scroll-down');
-    }
-}
-document.addEventListener('scroll' , headerScroll);
+  const headerScroll = () =>{
+      const scrollTop = document.documentElement.scrollTop;
+      const header = document.getElementById('header')
 
-let visualSwiper = new Swiper(".main-visual-container", {
-    loop:true,
-    speed: 1500,
-    effect: "fade",
-    fadeEffect: {
-        crossFade: true,
+      if(scrollTop > 100){
+          header.classList.add('scroll-down');
+      }else{
+          header.classList.remove('scroll-down');
+      }
+  }
+  document.addEventListener('scroll' , headerScroll); 
+
+  let visualSwiper = new Swiper(".main-visual-container", {
+      loop:true,
+      speed: 1500,
+      effect: "fade",
+      fadeEffect: {
+          crossFade: true,
+        },
+        autoplay: { 
+
+          delay: 4500,
+          disableOnInteraction: false,
+        },  
+      pagination: {
+        el: ".visual-pagination",
+        clickable: true,
       },
+  }); 
+
+  let newsSwiper = new Swiper(".news-slide", {
+      loop:true,
+      speed: 500,
+      slidesPerView: 1.2,
+      spaceBetween: 10,
       autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },  
+        breakpoints: {
+          581: {
+            slidesPerView: 2.2,
+            spaceBetween: 20
+          },
+          769: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+        }
+    }); 
 
-        delay: 4500,
-        disableOnInteraction: false,
-      },  
-    pagination: {
-      el: ".visual-pagination",
-      clickable: true,
-    },
-});
+    const aside = document.querySelector('#aside');
+    const asideBtn = document.querySelector('.aside-btn');
+    const closeBtn = document.querySelector('.aside-closeBtn')
+    const deemed = document.querySelector('.deemed'); 
 
-let newsSwiper = new Swiper(".news-slide", {
-    loop:true,
-    speed: 500,
-    slidesPerView: 1.2,
-    spaceBetween: 10,
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },  
-      breakpoints: {
-        581: {
-          slidesPerView: 2.2,
-          spaceBetween: 20
-        },
-        769: {
-          slidesPerView: 3,
-          spaceBetween: 30
-        },
-      }
-  });
+    const asideOpen = () => {
+      aside.classList.add('aside-active');
+      document.body.classList.add('scroll-stop');
+      deemed.style.display = "block";
+    } 
 
-  const aside = document.querySelector('#aside');
-  const asideBtn = document.querySelector('.aside-btn');
-  const closeBtn = document.querySelector('.aside-closeBtn')
-  const deemed = document.querySelector('.deemed');
-
-  const asideOpen = () => {
-    aside.classList.add('aside-active');
-    document.body.classList.add('scroll-stop');
-    deemed.style.display = "block";
-  }
-
-  const asideClose = () => {
-    aside.classList.remove('aside-active');
-    document.body.classList.remove('scroll-stop')
-    deemed.style.display = "none";
-  }
-
-  function asideMenu() {
-  let listTitle = document.getElementsByClassName('list-title');
-  let i;
-
-  for (i = 0; i < listTitle.length; i++) {
-    listTitle[i].addEventListener("click", (e) => {
-      e.target.classList.toggle('aside-checked');
-      let listItem = e.target.nextElementSibling;
-      if (listItem.style.maxHeight) {
-        listItem.style.maxHeight = null;
+    const asideClose = () => {
+      aside.classList.remove('aside-active');
+      document.body.classList.remove('scroll-stop')
+      deemed.style.display = "none";
+    }
+    let device = () => {
+      if ('ontouchstart' in document.documentElement === true) {
+        return 'touchstart';
       } else {
-        listItem.style.maxHeight = listItem.scrollHeight + "px";
+        return 'click';
       }
-    });
+    }
+    console.log(device)
+
+    asideBtn.addEventListener(device , asideOpen);
+    closeBtn.addEventListener(device , asideClose); 
+
+
+    function asideMenu() {
+    let listTitle = document.getElementsByClassName('list-title');
+    let i;  
+
+    for (i = 0; i < listTitle.length; i++) {
+      listTitle[i].addEventListener("click", (e) => {
+        e.target.classList.toggle('aside-checked');
+        let listItem = e.target.nextElementSibling;
+        if (listItem.style.maxHeight) {
+          listItem.style.maxHeight = null;
+        } else {
+          listItem.style.maxHeight = listItem.scrollHeight + "px";
+        }
+      });
+    }
   }
-}
   asideMenu()
 
 }
