@@ -84,14 +84,6 @@ let newsSwiper = new Swiper(".news-slide", {
     document.body.classList.remove('scroll-stop')
     deemed.style.display = "none";
   }
-  
-  asideBtn.addEventListener('click' , function(){
-    asideOpen()
-  });
-  closeBtn.addEventListener('click' , function(){
-    asideClose()
-  });
-
 
   function asideMenu() {
   let listTitle = document.getElementsByClassName('list-title');
