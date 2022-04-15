@@ -84,17 +84,9 @@ window.onload = function(){
       document.body.classList.remove('scroll-stop')
       deemed.style.display = "none";
     }
-    let device = () => {
-      if ('ontouchstart' in document.documentElement === true) {
-        return 'touchstart';
-      } else {
-        return 'click';
-      }
-    }
-    console.log(device)
 
-    asideBtn.addEventListener(device , asideOpen);
-    closeBtn.addEventListener(device , asideClose); 
+    asideBtn.addEventListener("click", asideOpen);
+    closeBtn.addEventListener("click", asideClose); 
 
 
     function asideMenu() {
