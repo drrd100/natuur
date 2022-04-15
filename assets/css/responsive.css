@@ -22,7 +22,7 @@
   @media screen and (max-width: 1024px) { 
     .product .pr-list li{
        max-width: initial;
-       width: 23.25%;
+       width: 100%;
     }
     .product .pr-list li p{
         font-size: 14px;
@@ -59,7 +59,7 @@
     .product{
         padding: 80px 0;
     }
-    .product .pr-list li{
+    .product .pr-list li a{
        display: block;
        width: 96%;
        margin: 0 auto;
@@ -72,7 +72,7 @@
        display: grid;
        grid-template-columns: 1fr 1fr;
     }
-    .product .pr-list li:hover{
+    .product .pr-list li a:hover{
         transform: none;
     }
 
@@ -262,8 +262,8 @@
         font-size: 4.58vw;
         margin-bottom: 8.33vw;
     }
-    .product .pr-list li{
-        padding: 2.08vw;
+    .product .pr-list li a{
+        padding: 3vw 2.08vw;
     }
     .product .pr-list li span{
         font-size: 3.3vw;

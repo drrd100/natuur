@@ -273,18 +273,19 @@
     align-items: center;
 }
 .product .pr-list li{
-    max-width: 270px;
+max-width: 270px;
+}
+
+.product .pr-list li a{
+    display: block;
     border-radius: 10px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    padding: 20px;
+    padding: 20px 15px;
     box-sizing: border-box;
     cursor: pointer;
     transition: all 0.6s ease;
+}
 
-}
-.product .pr-list li a{
-    display: block;
-}
 .product .pr-list li span{
     display: block;
     color: #004400;
@@ -298,7 +299,7 @@
     max-width: 70%;
     transition: all 0.6s ease;
 }
-.product .pr-list li:hover{
+.product .pr-list li a:hover{
     transform: translateY(-20px);
 }
 .product .pr-list li:hover img{
