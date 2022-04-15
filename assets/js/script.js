@@ -85,8 +85,12 @@ let newsSwiper = new Swiper(".news-slide", {
     deemed.style.display = "none";
   }
   
-  asideBtn.addEventListener('click' , asideOpen);
-  closeBtn.addEventListener('click' , asideClose);
+  asideBtn.addEventListener('click' , function(){
+    asideOpen()
+  });
+  closeBtn.addEventListener('click' , function(){
+    asideClose()
+  });
 
 
   function asideMenu() {
